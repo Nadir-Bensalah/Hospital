@@ -1,0 +1,11 @@
+# links follow
+Options +FollowSymlinks 
+# rewrite Apache activate
+RewriteEngine On
+
+
+# /accueil -> /controllers/homePageController.php
+ RewriteRule ^accueil$ /controllers/homePageController.php [L]
+
+ # /inscription -> /controllers/addPatientController.php
+ RewriteRule ^inscription$ /controllers/addPatientController.php [L]
